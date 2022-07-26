@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="./style/style.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>BOOKSHELF APPS</h1>
+            <p><q>Membaca adalah Jendela Dunia</q></p>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <article>
+                    <section class="input-form">
+                        <h2>Masukkan Data Buku</h2>
+                        <form id="input-book">
+                            <div class="input">
+                                <label for="input-title">Judul Buku</label>
+                                <input id="input-title" type="text" required/>
+                            </div>
+                            <div class="input">
+                                <label for="input-author">Penulis Buku</label>
+                                <input id="input-author" type="text" required/>
+                            </div>
+                            <div class="input">
+                                <label for="input-year">Tahun Perilisan Buku</label>
+                                <input id="input-year" type="number" required/>
+                            </div>
+                            <div class="input-inline">
+                                <label for="input-isComplete">Selesai Dibaca</label>
+                                <input id="input-isComplete" type="checkbox" />
+                            </div>
+                            <button type="submit">Simpan</button>
+                        </form>
+                    </section>
+                </article>
+            </div>
+
+            <div class="container">
+                <article class="unCompleted">
+                    <section class="book-shelf">
+                        <h2>Buku yang belum dibaca</h2>
+                        <div id="unCompletedBook" class="book-list"></div>
+                    </section>
+                </article>
+            </div>
+
+            <div class="container">
+                <article class="completed">
+                    <section class="book-shelf">
+                        <h2>Buku yang sudah dibaca</h2>
+                        <div id="completedBook" class="book-list"></div>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+        <div class="attribution"> 
+            Coded by <a href="https://github.com/Hanzz14/BookShelf-Apps">Ali Hafidz</a>.
+        </div>
+        <script src="./script/script.js"></script> 
+    </body>
+</html>
